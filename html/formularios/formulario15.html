@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 15</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+
+</head>
+<body>
+
+    <h1>Envía tu foto de receta</h1>
+    
+    <form method="post" enctype="multipart/form-data" action="#">  <!-- enctype es crucial para enviar archivos -->
+        <label for="nombre_receta">Nombre de la receta (máx. 80 caracteres):</label>
+        <input type="text" id="nombre_receta" name="nombre_receta" maxlength="80" required>
+        <br>
+    
+        <label for="tipo_receta">Tipo de receta:</label>
+        <select id="tipo_receta" name="tipo_receta" required>
+        <option value="carne">Carne</option>
+        <option value="pescado">Pescado</option>
+        <option value="fruta">Fruta</option>
+        </select>
+        <br>
+    
+        <label for="imagen_receta">Seleccionar imagen:</label>
+        <input type="file" id="imagen_receta" name="imagen_receta" accept="image/*" required>  <!-- accept limita a imágenes -->
+        <br>
+    
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br><a href="../../html.html"><button>Volver</button></a>
+
+    </body>
+</html>

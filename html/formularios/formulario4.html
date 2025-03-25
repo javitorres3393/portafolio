@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+</head>
+<body>
+    <body>
+        <div class="form-container">
+            <form action="procesar_registro.php" method="POST">
+                <label for="matricula">Número de matrícula</label>
+                <input type="text" id="matricula" name="matricula" pattern="M\d{3}" placeholder="M001" required><br><br>
+                
+                <label>Materias</label><br>
+                <input type="checkbox" id="matematicas" name="materias[]" value="Matemáticas">
+                <label for="matematicas">Matemáticas</label><br>
+                
+                <input type="checkbox" id="algoritmos" name="materias[]" value="Algoritmos">
+                <label for="algoritmos">Algoritmos</label><br>
+                
+                <input type="checkbox" id="sistemas" name="materias[]" value="Sistemas">
+                <label for="sistemas">Sistemas</label><br>
+                
+                <input type="checkbox" id="robotica" name="materias[]" value="Robótica">
+                <label for="robotica">Robótica</label><br><br>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+    </body>
+</body>
+</html>

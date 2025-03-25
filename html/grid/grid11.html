@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          grid-template-rows: 100px 100px;
+          grid-gap: 1px;
+        }
+        
+        .celda {
+          background-color: #778899;
+          text-align: center;
+          padding: 10px;
+          color: white;
+        }
+        
+        .grid-anidada {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 50px 50px;
+          background-color: #D3D3D3; /* Color de fondo para la grilla anidada */
+          grid-gap: 1px;
+        }
+        
+        .celda-anidada {
+          background-color: #DCDCDC; /* Color de fondo para las celdas anidadas */
+          text-align: center;
+          padding: 10px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+          <div class="celda" style="grid-column: 1 / 2; grid-row: 1 / 3;">celda 1</div>
+          <div class="celda" style="grid-column: 2 / 3; grid-row: 1 / 2;">celda 2</div>
+          <div class="celda" style="grid-column: 2 / 3; grid-row: 2 / 3;">celda 3</div>
+          <div class="celda" style="grid-column: 2 / 3; grid-row: 2 / 3;">
+            <div class="grid-anidada">
+              <div class="celda-anidada">Grid Anidado</div>
+              <div class="celda-anidada">Lista 2</div>
+              <div class="celda-anidada">Lista 3</div>
+              <div class="celda-anidada">Lista 4</div>
+              <div class="celda-anidada">Lista 5</div>
+            </div>
+          </div>
+        </div>
+        
+        </body>
+</html>

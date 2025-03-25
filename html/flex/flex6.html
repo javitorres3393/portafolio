@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 6</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <style>
+        body {
+          margin: 0; /* Elimina márgenes del body */
+          display: flex; /* Convierte el body en un flex container */
+          height: 100vh; /* Establece la altura al 100% de la viewport */
+        }
+        
+        .sidebar {
+            width: 20%; /* Ancho del sidebar (1/5 del total) */
+            background-color: lightblue;
+            padding: 12px 24px;
+            box-sizing: border-box; /* Incluye padding en el ancho */
+        }
+        
+        .content {
+            width: 80%; /* Ancho del contenido (4/5 del total) */
+            background-color: lightgreen;
+            padding: 12px 24px;
+            box-sizing: border-box; /* Incluye padding en el ancho */
+        }
+        
+        .gap {
+          width: 2px; /* Espacio entre sidebar y contenido */
+          background-color: #ccc; /* Color del espacio */
+        }
+        </style>
+        </head>
+        
+        <div class="sidebar">
+            contenido<br>lateral
+        </div>
+        <div class="gap"></div>
+        <div class="content">
+            Esto sería el contenido principal
+
+            <br><br><a href="../../html.html"><button>Volver</button></a>
+
+        </div>
+        </body>
+        
+</html>

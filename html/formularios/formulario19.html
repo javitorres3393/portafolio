@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 19</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+
+</head>
+<body>
+
+    <h1>Formulario de Checkout</h1>
+    <p>Importe total = 520€</p>
+    
+    <form method="post" action="procesar.php">
+        <label for="numeroTarjeta">Número de tarjeta (16 dígitos):</label>
+        <input type="text" id="numeroTarjeta" name="numeroTarjeta" pattern="\d{16}" required>
+        <br>
+        
+        <label for="nombreTitular">Nombre del titular:</label>
+        <input type="text" id="nombreTitular" name="nombreTitular" required>
+        <br>
+        
+        <label for="mesCaducidad">Mes de caducidad:</label>
+        <select id="mesCaducidad" name="mesCaducidad" required>
+        <option value="">Seleccionar</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        </select>
+        <br>
+        
+        <label for="añoCaducidad">Año de caducidad:</label>
+        <select id="añoCaducidad" name="añoCaducidad" required>
+        <option value="">Seleccionar</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        </select>
+        <br>
+        
+        <label for="cvv">CVV:</label>
+        <input type="password" id="cvv" name="cvv" pattern="\d{3}" required>
+        <br>
+        
+        <label for="notas">Notas (opcional):</label>
+        <textarea id="notas" name="notas" cols="60" rows="2"></textarea>
+        <br>
+        
+        <input type="checkbox" id="guardarDatos" name="guardarDatos">
+        <label for="guardarDatos">Guardar datos para otras compras</label>
+        <br>
+        
+        <button type="submit">Pagar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+    <br><br><a href="../../html.html"><button>Volver</button></a>
+
+    </body>
+</html>

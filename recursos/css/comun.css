@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Fondo oscuro */
+    color: #f4f4f4; /* Color de texto claro para buen contraste */
+}
+
+/* Cabecera con logo y navegación */
+header {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo como botón */
+.logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Navegación */
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #f39c12;
+    color: #222;
+    border-radius: 5px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #333; /* Fondo gris oscuro para el recuadro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del texto */
+.texto {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.texto h1 {
+    font-size: 36px; /* Título más grande */
+    color: #fff; /* Blanco */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 15px; /* Espaciado debajo del título */
+}
+
+.texto h4 {
+    font-size: 18px; /* Tamaño más pequeño para el subtítulo */
+    color: #999; /* Color gris más claro para el subtítulo */
+    font-weight: normal; /* Texto normal */
+    margin-top: 10px;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.texto p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilo para el botón CV */
+.boton-cv {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 18px; /* Ajustado para que sea igual que los botones de la cabecera */
+    font-weight: bold; /* Texto en negrita */
+    padding: 8px 12px; /* Igual que los botones de la cabecera */
+    transition: 0.3s;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.boton-cv:hover {
+    background-color: #f39c12;
+    color: #222;
+    border-radius: 5px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+
+nav a, .texto a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #f4f4f4; /* Asegura que el texto siga teniendo buen contraste */
+}
+
+nav a:hover, .texto a:hover {
+    text-decoration: none; /* Asegura que no aparezca subrayado al pasar el mouse */
+    background-color: #f39c12;
+    color: #222;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Aumenta el tamaño en un 10% */
+}
+

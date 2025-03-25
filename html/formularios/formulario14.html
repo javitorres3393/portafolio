@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <title>Formulario 14</title>
+</head>
+<body>
+
+    <h2>Crear Cuenta</h2>
+    <h2>Es gratis para siempre</h2>
+    
+    <form method="post" action="#">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br>
+    
+        <label for="telefono">Teléfono (xxx xx xx xx):</label>
+        <input type="tel" id="telefono" name="telefono" pattern="\d{3} \d{2} \d{2} \d{2}" required title="Formato: xxx xx xx xx"><br>
+    
+        <label for="password">Contraseña (mínimo 8 caracteres):</label>
+        <input type="password" id="password" name="password" required minlength="8"><br>
+    
+        <label for="areas_interes">Áreas de interés:</label><br>
+        <select id="areas_interes" name="areas_interes[]" multiple> 
+        <option value="programacion">Programación</option>
+        <option value="diseño">Diseño</option>
+        <option value="ciencias">Ciencias</option>
+    </select><br>
+    
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+    
+        <label><input type="checkbox" name="acepta_terminos" required> Acepto los términos de protección de datos</label><br>
+    
+        <br><input type="submit" value="Enviar">
+    </form>
+    <br><br><a href="../../html.html"><button>Volver</button></a>
+
+    </body>
+</html>

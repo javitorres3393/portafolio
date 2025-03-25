@@ -1,0 +1,55 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>Card 1</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <style>
+     .card{
+        border: 1px solid lightgray;
+        border-radius: 15px;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        justify-content: space-between;
+        margin: 80px auto;
+        width: 420px;
+    }
+    .card .titulo{
+        font-size: 24px;
+        padding: 10px 10px 0 10px;
+    }
+    .card .cuerpo{
+        padding: 10px;
+    }
+    .card .pie{
+        background: #6699ff;
+        border-radius: 0 0 15px 15px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+    }
+    .card .pie a{
+        color: white;
+        text-decoration: none;
+    }
+    .card .pie a:after{
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+      </style>
+    </head>
+    
+    <body>
+    <div class="card">
+      <div class="titulo">Una tarjeta básica</div>
+      <div class="cuerpo"> <img src="imagen1.jpg" alt="muestra" width="400px"> lorem ipsum </div>
+      <div class="pie"> <a href="#">Más información</a> </div>
+    </div>
+    
+    
+    </body></html>

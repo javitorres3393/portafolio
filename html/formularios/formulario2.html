@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="viajero.php" method="POST">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Nombre del viajero" required>
+            
+            <label for="tipo_pasaje">Tipo de pasaje</label>
+            <select id="tipo_pasaje" name="tipo_pasaje">
+                <option value="0">Vip</option>
+                <option value="1">Especial</option>
+                <option value="2">Primera</option>
+                <option value="3">Segunda</option>
+            </select>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <br><br><a href="../../html.html"><button>Volver</button></a>
+</body>
+</html>

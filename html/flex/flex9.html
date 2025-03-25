@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 9</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <style>
+        .card-container {
+          display: flex;
+          justify-content: space-around; /* Distribuye el espacio entre las tarjetas */
+          flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias líneas si es necesario */
+        }
+        
+        .card {
+          width: 30%; /* Ancho de cada tarjeta (ajustable) */
+          min-height: 200px; /* Altura mínima para asegurar que el contenido se vea */
+          background-color: white;
+          border-radius: 5px;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          margin-bottom: 10px; /* Espacio entre tarjetas */
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .card-header {
+          height: 40px;
+          background-color: black;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .card-body {
+          flex-grow: 1; /* Ocupa el espacio restante */
+          padding: 10px;
+        }
+        
+        .card-footer {
+          height: 30px;
+          background-color: gray;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="card-container">
+          <div class="card">
+            <div class="card-header">Tarjeta 1</div>
+            <div class="card-body">
+              <p>Contenido de la tarjeta 1.  Este texto puede ser más largo para probar el ajuste de altura.</p>
+              <p>Otra línea de texto.</p>
+            </div>
+            <div class="card-footer">Pie de página 1</div>
+          </div>
+          <div class="card">
+            <div class="card-header">Tarjeta 2</div>
+            <div class="card-body">
+              <p>Contenido de la tarjeta 2.</p>
+            </div>
+            <div class="card-footer">Pie de página 2</div>
+          </div>
+          <div class="card">
+            <div class="card-header">Tarjeta 3</div>
+            <div class="card-body">
+              <p>Contenido de la tarjeta 3.  Este texto es corto.</p>
+            </div>
+            <div class="card-footer">Pie de página 3</div>
+          </div>
+        </div>
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+
+        </body>
+</html>

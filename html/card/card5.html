@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card 5</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        #tarjeta {
+            background: #0f066f;
+            width: 300px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: white;
+        }
+
+        body {
+            background-color: azure;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        header { 
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-top: 2pc;
+        }
+
+        header img {
+            margin-top: 1pc;
+        }
+
+        #contenedorfechas {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fecha {
+            width: 33%;
+            background: #6869dc;
+            margin:0px 1px 0px 1px;
+            height: 100px;
+        }
+
+        .fecha .letra {
+            text-align: center;
+            font-size: 20px;
+            color:#0f066f;
+            margin-top: 5px;
+
+        }
+
+        .fecha .num {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color:white;
+            margin-top: -5px;
+        }
+
+        footer {
+            background-color: #0f066f;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 10px;
+
+        }
+
+        footer h1 {
+            background:white;
+            margin: 40px 3px 0px 3px;
+            color: #0f066f;
+        }
+    </style>
+</head>
+<body>  
+    <div id="tarjeta">
+        <header>
+            <img src="./imagen5.png" width="130px" height="130px">
+            <h1>Dora Jasso Baez</h1>
+        </header>
+        <main>
+            <h1 class="text-center">Válido</h1>
+            <div id="contenedorfechas">
+                <div class="fecha">
+                    <p class="letra">Día</p>
+                    <p class="num">16</p>
+                </div>
+                <div class="fecha">
+                    <p class="letra">Mes</p>
+                    <p class="num">06</p>
+                </div>
+                <div class="fecha">
+                    <p class="letra">Año</p>
+                    <p class="num">23</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="visitante">
+                <h1>VISITANTE</h1>
+            </div>
+        </footer>
+    </div>
+    <br><br><a href="../../html.html"><button>Volver</button></a>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 11</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <style>
+        body {
+          display: flex;
+          min-height: 100vh;
+          margin: 0;
+          flex-direction: column; /* Important: Makes the body a column to stack nav and content */
+        }
+        
+        nav {
+          background-color: #FFA500; /* Orange color */
+          color: rgb(0, 0, 0);
+          padding: 10px 0; /* Adjust padding as needed */
+          text-align: center; /* Center the title */
+        }
+        
+        .content-container { /* Container for the three-column layout */
+          flex: 1; /* Allows the content to expand to fill remaining space */
+          display: flex;
+        }
+        
+        .columna {
+          flex: 1;
+          padding: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .columna:nth-child(2) {
+          flex: 2;
+        }
+        
+        .titulo {
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 24px;
+        }
+        
+        .columna-izquierda {
+          background-color: darkgray;
+        }
+        
+        .columna-central {
+          background-color: white;
+        }
+        
+        .columna-derecha {
+          background-color: darkgray;
+        }
+        
+        </style>
+        </head>
+        <body>
+        
+        <nav>
+          <h1>Título de la Página</h1>
+        </nav>
+        
+        <div class="content-container">
+          <div class="columna columna-izquierda">
+            <div class="titulo">Lateral Izquierdo</div>
+          </div>
+          <div class="columna columna-central">
+            <div class="titulo">Zona central</div>
+          </div>
+          <div class="columna columna-derecha">
+            <div class="titulo">Lateral Derecho</div>
+          </div>
+        </div>
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+
+        </body>
+</html>

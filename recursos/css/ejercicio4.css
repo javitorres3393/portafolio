@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrado vertical y horizontal */
+    height: 100vh;
+    background-color: #222; /* Fondo oscuro */
+    color: #f4f4f4; /* Color de texto claro */
+}
+
+/* Estilo para el primer contenedor */
+.contenedor {
+    text-align: center;
+    background-color: #333; /* Fondo gris oscuro para el recuadro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: fit-content; /* Ajusta el tamaño del contenedor al texto */
+    max-width: 90%; /* Limita el tamaño para pantallas grandes */
+}
+
+/* Centrar el texto en el primer contenedor */
+.contenedor p {
+    font-size: 40px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilo para el contenedor de botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 20px; /* Espacio entre el texto y los botones */
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+/* Estilos para el botón de volver */
+#volver {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px; /* Espacio extra para que esté más abajo, pero aún centrado */
+}
+
+#volver:hover {
+    background-color: #f39c12;
+}
+
+/* Contenedor para el botón de "Volver", manteniéndolo centrado */
+.boton-volver {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio entre los botones y el botón "Volver" */
+}

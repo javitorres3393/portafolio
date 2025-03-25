@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flex 3</title>
+<link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0; /* Elimina márgenes por defecto del body */
+}
+
+nav {
+  background-color: rgba(123, 198, 199, 0.8);
+  display: flex;
+  flex-direction: column; /* Ordena los items verticalmente */
+  width: max-content; /* Ancho del item más ancho */
+  padding: 10px; /* Añade espacio interno */
+}
+
+nav ul {
+  list-style: none; /* Elimina los marcadores de lista */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px; /* Espacio entre items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block; /* Hace que el enlace ocupe todo el ancho del li */
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Opciones</a></li>
+    <li><a href="#">Planes</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+<br><br><a href="../../html.html"><button>Volver</button></a>
+</body>
+</html>

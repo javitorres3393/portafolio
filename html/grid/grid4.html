@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 4</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 150px 150px; /* Anchos de columna */
+            grid-template-rows: 50px 100px 100px; /* Ajusta las alturas de las filas según sea necesario */
+            grid-gap: 1px; /* Separación entre celdas */
+        }
+        
+        .celda {
+            background-color: #778899; /* Color de fondo de las celdas */
+            text-align: center; /* Alineación del texto al centro */
+            padding: 10px; /* Espacio interno en las celdas */
+            color: white; /* Color del texto */
+        }
+        
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+            <div class="celda" style="grid-column: 1 / 4; grid-row: 1 / 2;">celda 1</div>  <!-- Celda que ocupa 3 columnas y 1 fila -->
+            <div class="celda" style="grid-column: 1 / 2; grid-row: 2 / 4;">celda 2</div>  <!-- Celda que ocupa 1 columna y 2 filas -->
+            <div class="celda">celda 3</div>
+            <div class="celda">celda 4</div>
+            <div class="celda">celda 5</div>
+            <div class="celda">celda 6</div>
+        </div>
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+
+        </body>
+</html>

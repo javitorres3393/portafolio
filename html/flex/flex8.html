@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 8</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <style>
+        .card {
+          background-color: white;
+          border-radius: 5px;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+          width: 300px; /* Ancho de la tarjeta */
+          display: flex;
+          flex-direction: column; /* Elementos en columna */
+          font-family: sans-serif;
+        }
+        
+        .header {
+          background-color: black;
+          color: white;
+          padding: 10px;
+          display: flex;
+          justify-content: center; /* Centra horizontalmente */
+          align-items: center; /* Centra verticalmente */
+        }
+        
+        .header h2 {
+          margin: 0; /* Elimina márgenes del encabezado */
+        }
+        
+        .body {
+          padding: 10px;
+          flex-grow: 1; /* Ocupa el espacio restante */
+        }
+        
+        .footer {
+          background-color: gray;
+          color: white;
+          padding: 10px;
+          display: flex;
+          justify-content: center; /* Centra horizontalmente */
+          align-items: center; /* Centra verticalmente */
+        }
+        
+        .footer h4 {
+          margin: 0; /* Elimina márgenes del pie */
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="card">
+          <div class="header">
+            <h2>Tarjeta de presentación</h2>
+          </div>
+          <div class="body">
+            <p>Contenido del cuerpo de la tarjeta</p>
+          </div>
+          <div class="footer">
+            <h4>Pie de la tarjeta</h4>
+          </div>
+        </div>
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+
+        </body>
+</html>

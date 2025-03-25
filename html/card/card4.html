@@ -1,0 +1,84 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>Ejercicio de CSS: Card efecto apilada</title>
+    <meta name="description" content="Esta card aparece sobre otras cards e incluye una de  aviso (precio)">
+    
+    <style>
+    html {
+        font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    }
+    body{ display:flex; flex-direction: column; justify-content:center; align-items: center; height: 100vh}
+
+    .card{
+        background: url("camara-clasica.jpg") no-repeat;
+        background-size: contain;
+        box-shadow: 1px 1px 8px 4px lightgray;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-between;
+        margin: 80px auto;
+        position: relative;
+        width: 450px;
+    }
+    .card::after, .card::before{
+        background: white;
+        border: 2px solid #c9bdbd;
+        content: '';
+        height: 100%;
+        left: 6px;
+        position: absolute;
+        top: 6px;
+        transform: rotate(5deg);
+        width: 100%;
+        z-index: -1;
+    }
+    .card::before{
+        left: 12px;
+        top: 12px;
+        transform: rotate(-8deg);
+    }
+    .card .texto{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .card .note{
+        align-items: center;
+        aspect-ratio: 1/1;
+        background: #fd0000a8;
+        border-radius: 50%;
+        box-shadow: inset 0px 1px 13px 14px #fffbfbb5;
+        display: flex;
+        justify-content: center;
+        margin: 8px 8px;
+        padding: 0;
+        width: 31%;
+    }
+    .card .price{
+        color: #ffffff;
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: 700;
+    }
+    .card .footer{
+        background: red;
+        color: white;
+        font-size: 1.5rem;
+        padding: 4px;
+        text-align: center;
+    }
+    </style>
+    </head>
+    
+    <body>
+    <div class="card">
+        <div class="texto">
+        <div class="note">
+            <div class="price">800€</div>
+        </div>
+        </div>
+        <div class="footer">¡Super Oferta!</div>
+    </div>
+    
+
+    </body></html>

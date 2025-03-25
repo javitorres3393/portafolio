@@ -1,0 +1,32 @@
+/* Estilo general para los botones */
+button {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    font-size: 18px; /* Mismo tamaño que los botones de la cabecera */
+    font-weight: bold; /* Texto en negrita */
+    padding: 12px 20px; /* Espaciado interno */
+    border: 2px solid #444; /* Borde oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo puntero */
+    display: block; /* Asegura que ocupen todo el ancho disponible */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: center; /* Centrar texto */
+    transition: all 0.3s ease; /* Transición suave */
+    margin: 10px 0; /* Espaciado entre botones */
+    text-decoration: none;
+}
+
+/* Cambia de color al pasar el cursor */
+button:hover {
+    background-color: #f39c12; /* Color amarillo */
+    color: #222; /* Texto oscuro */
+    border-color: #f39c12; /* Borde del mismo color */
+}
+
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente en flexbox */
+    align-items: center; /* Centra verticalmente en flexbox */
+    margin: 0; /* Evita márgenes extra */
+}

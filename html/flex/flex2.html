@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flex 2</title>
+        <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+        <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        nav {
+            background-color: rgba(123, 198, 199, 0.8);
+            display: flex;
+            justify-content: space-around; /* Distribuye los items uniformemente */
+            width: 100%; /* Ocupa todo el ancho */
+            padding: 10px 0; /* Añade espacio interno */
+            flex-direction: row; /* ¡Aquí está la clave! */
+        }
+        
+        nav ul {
+            list-style: none; /* Elimina los marcadores de lista */
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav li {
+          margin: 0 10px; /* Añade espacio entre los items */
+        }
+        
+        nav a {
+          text-decoration: none; /* Elimina la decoración del enlace */
+          color: #333; /* Color del texto */
+          padding: 10px 20px; /* Añade padding al enlace */
+          border-radius: 5px; /* Añade bordes redondeados */
+          transition: background-color 0.3s ease; /* Transición suave para el hover */
+        }
+        
+        nav a:hover {
+          background-color: #ddd; /* Color de fondo al pasar el ratón */
+        }
+        </style>
+        </head>
+        <body>
+        
+        <nav>
+            <ul>
+            <a href="#">Home</a>
+            <a href="#">Servicios</a>
+            <a href="#">Opciones</a>
+            <a href="#">Planes</a>
+            <a href="#">Contacto</a>
+            </ul>
+        </nav>
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+        </body>
+</html>

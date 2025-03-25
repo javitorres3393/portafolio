@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 200px 200px;
+            grid-template-rows: 50px 100px;
+            grid-template-areas:
+                "header header header"
+                "sidebar main main";
+            grid-gap: 1px;
+        }
+        
+        .celda {
+            background-color: #778899;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        
+        .header { grid-area: header; }
+        .sidebar { grid-area: sidebar; }
+        .main { grid-area: main; }
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+            <div class="celda header">celda 1</div>
+            <div class="celda sidebar">celda 2</div>
+            <div class="celda main">celda 3</div>
+            <div class="celda main">celda 4</div>
+            <div class="celda main">celda 5</div>
+            <div class="celda main">celda 6</div>
+        </div>
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+
+        </body>
+</html>

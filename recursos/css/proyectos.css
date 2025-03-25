@@ -1,0 +1,36 @@
+/* Estilos generales para el contenedor de videos */
+.video-slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+/* Hacer los videos responsivos */
+iframe {
+    width: 100%;
+    height: 315px; /* Ajusta la altura de los videos */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el enlace */
+a {
+    color: #fff; /* Texto blanco por defecto */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 18px; /* Tamaño de texto adecuado */
+    font-weight: bold; /* Negrita */
+    transition: 0.3s; /* Transición suave para el color */
+}
+
+a:hover {
+    color: #f39c12; /* Cambia a color amarillo cuando pasa el ratón */
+}
+

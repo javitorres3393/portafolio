@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <title>Formulario 3</title>
+</head>
+<body>
+    <form action="procesar_compra.php" method="GET">
+        <label for="articulo">Artículo:</label>
+        <input type="text" id="articulo" name="articulo" placeholder="Articulo" required>
+        
+        <p>Forma de entrega:</p>
+        <input type="radio" id="envio" name="entrega" value="envio" required>
+        <label for="envio">Envío a domicilio</label><br>
+
+        <input type="radio" id="recogida" name="entrega" value="recogida" required>
+        <label for="recogida">Recogida en tienda</label><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <br><br><a href="../../html.html"><button>Volver</button></a>
+</body>
+</html>

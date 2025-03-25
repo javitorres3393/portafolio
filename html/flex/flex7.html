@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 7</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <style>
+        body {
+          margin: 0;
+          display: flex;
+          height: 100vh; /* Altura completa de la ventana */
+          font-family: sans-serif; /* Fuente sin serifas */
+        }
+        
+        .sidebar {
+          width: 10%; /* Ancho del sidebar (1/9 del total) */
+          background-color: lightblue;
+          padding: 12px;
+          box-sizing: border-box;
+        }
+        
+        .content {
+          width: 90%; /* Ancho del contenido (8/9 del total) */
+          background-color: lightgreen;
+          padding: 12px;
+          box-sizing: border-box;
+        }
+        
+        .sidebar ul {
+          list-style: none;
+          padding: 0;
+        }
+        
+        .sidebar li {
+          border-bottom: 1px solid gray;
+          padding: 8px 0;
+        }
+        
+        .sidebar a {
+          text-decoration: none;
+          color: black;
+          display: block; /* Ocupa todo el ancho del elemento li */
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="sidebar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Opciones</a></li>
+            <li><a href="#">Planes</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h1>Contenido Principal</h1>
+          <p>Aquí iría el contenido principal de la página.</p>
+          <br><br><a href="../../html.html"><button>Volver</button></a>
+
+        </div>
+        
+        </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 50px 100px 100px; /* Ajusta las alturas según sea necesario */
+          grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer main";
+          grid-gap: 1px;
+        }
+        
+        .celda {
+          background-color: #778899;
+          text-align: center;
+          padding: 10px;
+          color: white;
+        }
+        
+        .header { grid-area: header; }
+        .sidebar { grid-area: sidebar; }
+        .main { grid-area: main; }
+        .footer { grid-area: footer; }
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+          <div class="celda header">celda 1</div>
+          <div class="celda header">celda 2</div>
+          <div class="celda sidebar">celda 3</div>
+          <div class="celda main">celda 4</div>
+          <div class="celda footer">celda 5</div>
+        </div>
+        
+        </body>
+</html>

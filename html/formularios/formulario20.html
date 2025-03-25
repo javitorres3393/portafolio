@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 20</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+</head>
+<body>
+
+    <h1>Formulario de Búsqueda Avanzada</h1>
+    
+    <form method="get" action="resultados.php">
+        <label for="palabraClave">Palabra Clave:</label>
+        <input type="text" id="palabraClave" name="palabraClave" required>
+        <br>
+        
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+        <option value="Todas">Todas</option>
+        <option value="Electrónica">Electrónica</option>
+        <option value="Ropa">Ropa</option>
+        <option value="Hogar">Hogar</option>
+        </select>
+        <br>
+        
+        <label for="precioMinimo">Precio Mínimo:</label>
+        <input type="number" id="precioMinimo" name="precioMinimo" min="0">
+        <br>
+        
+        <label for="precioMaximo">Precio Máximo:</label>
+        <input type="number" id="precioMaximo" name="precioMaximo" min="0">
+        <br>
+        
+        <label for="ordenarPor">Ordenar Por:</label>
+        <select id="ordenarPor" name="ordenarPor">
+            <option value="Relevancia">Relevancia</option>
+            <option value="Precio">Precio</option>
+        </select>
+        <br>
+        
+        <button type="submit">Buscar</button>
+    </form>
+    <br><br><a href="../../html.html"><button>Volver</button></a>
+
+    </body>
+</html>

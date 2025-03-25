@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 9</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+          grid-template-rows: repeat(2, 1fr); /* Dos filas de igual alto */
+          grid-template-areas:
+            "area2 area3 area4"
+            "area5 area6 area1";
+          grid-gap: 1px;
+        }
+        
+        .celda {
+          background-color: #778899;
+          text-align: center;
+          padding: 10px;
+          color: white;
+        }
+        
+        .area1 { grid-area: area1; }
+        .area2 { grid-area: area2; }
+        .area3 { grid-area: area3; }
+        .area4 { grid-area: area4; }
+        .area5 { grid-area: area5; }
+        .area6 { grid-area: area6; }
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+          <div class="celda area1">celda 1</div>
+          <div class="celda area2">celda 2</div>
+          <div class="celda area3">celda 3</div>
+          <div class="celda area4">celda 4</div>
+          <div class="celda area5">celda 5</div>
+          <div class="celda area6">celda 6</div>
+        </div>
+        
+        </body>
+</html>

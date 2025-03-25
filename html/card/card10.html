@@ -1,0 +1,148 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>Documento sin título</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+    /*Por claridad del código y simplicidad he usado variables css: alto, ancho, size, color1, color2*/  
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        color: #404040;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+    body{
+        height: auto;
+        margin: 0;
+        padding: 4rem 0;
+    }
+    .centrado{
+        margin: 80px auto 0 auto;
+    }
+    .sombra{
+        filter: drop-shadow(10px 4px 4px #ff00004f);
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 300px;
+    }
+    .card .header{
+        background-color: red;
+        border-radius: 12px;
+        height: 400px;
+        padding: 1.5rem;
+        position: relative;
+    }
+    .card .header::after{
+        --alto: calc(100% - 30px);
+        --ancho: calc(100% - 30px);
+        border: 4px solid #f3eeee;
+        border-radius: 12px;
+        content: '';
+        height: var(--alto);
+        left: calc(50% - var(--ancho) / 2 - 4px);
+        position: absolute;
+        top: calc(50% - var(--alto) / 2 - 4px);
+        width: var(--ancho);
+        z-index: -1;
+    }
+    .card .header .imagen{
+        align-items: center;
+        aspect-ratio: 1;
+        background-color: aliceblue;
+        border-radius: 80%;
+        box-shadow: 0 0 10px 10px #00000029;
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        margin: 0px 0px 0 auto;
+        transform: rotate(20deg);
+        width: 70px;
+    }
+    .card .header .titulo{
+        background: #462ad140;
+        color: white;
+        text-align: center;
+    }
+    .card .descripcion{
+        color: white;
+        height: auto;
+        line-height: 150%;
+        margin-bottom: 0;
+        padding: 10px 20px 0 19px;
+        text-align: center;
+    }
+    .card .triangulo{
+        background: transparent;
+        flex: 1 1 100px;
+        position: relative;
+        text-align: center;
+    }
+    .card .triangulo::after{
+      --size: 100px;
+        border: var(--size) solid transparent;
+        border-top: var(--size) solid red;
+        content: '';
+        display: block;
+        height: 0;
+        left: calc(50% - var(--size));
+        position: absolute;
+        top: 0px;
+        width: 0;
+        z-index: -1;
+    }
+    .card .accion{
+      --color1: white;
+        --color2: black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: hidden;
+        width: fit-content;
+    }
+    .card .accion:hover{
+        --color1: black;
+        --color2: white;
+        cursor: pointer;
+    }
+    .card .accion .precio{
+        background: var(--color2);
+        color: var(--color1);
+        padding: 10px;
+    }
+    .card .accion .boton{
+        background: var(--color1);
+        color: var(--color2);
+        padding: 10px;
+    }
+    .card .centrohrz{
+        color: white;
+        font-size: 3rem;
+        margin: 0 auto;
+        padding: 15px;
+        text-align: center;
+    }
+    </style>  
+    </head>
+    
+    <body>
+      <div class="card centrado">
+      <div class="header sombra">
+        <div class="imagen"><span>New</span></div>
+        <h1 class="titulo">Servicio VIP</h1>
+        <h3 class="descripcion">Disfrute ahora de todas nuestras ventajas</h3>  
+        <div class="centrohrz"><i class="fa-solid fa-medal"></i></div>
+        <div class="accion">
+          <div class="precio">50$</div>
+          <div class="boton">Suscribir</div>
+        </div>
+      </div>
+      <div class="triangulo sombra"></div>  
+      </div>
+    
+    
+    </body></html>

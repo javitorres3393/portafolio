@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./recursos/css/comun.css">
+    <link rel="stylesheet" type="text/css" href="./recursos/css/javascript.css">
+    <title>Javascript</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="./recursos/imagenes/logo.png">
+</head>
+<body>
+
+    <header>
+        <a href="./main.html">
+            <img src="./recursos/imagenes/logo.png" alt="Logo de Javier Torres Jiménez" class="logo">
+        </a>
+        <nav>
+            <a href="main.html">Inicio</a>
+            <a href="javascript.html">Javascript</a>
+            <a href="html.html">HTML</a>
+            <a href="sobremi.html">Sobre mi</a>
+            <a href="proyectos.html">Proyectos</a>
+        </nav>
+    </header>
+    
+    <!--BOTONES INICIALES -->
+    <div class="contenedor">
+        <div class="texto">
+            <h1>Juegos</h1>
+
+            <button onclick="ejercicio1()">1. Cambia el Color de Fondo Aleatoriamente ✔</button>
+            <div class="linea-separadora"></div> 
+
+            <a href="ejercicio2.html"><button>2. Bola Mágica de Respuestas Aleatorias ✔</button></a>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio3()">3. Juego: Adivina el Número ✔</button>
+            <div class="linea-separadora"></div>
+
+            <a href="ejercicio4.html"><button>4. Cronómetro ✔</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="ejercicio5.html"><button>5. Piano Virtual (Con Teclado)  ✔</button></a>
+            <div class="linea-separadora"></div>
+        </div>
+    </div>
+
+    <!-- BOTONES BUCLES -->
+    <div class="contenedor">
+        <div class="texto">
+            <h1>Bucles</h1>
+
+            <button onclick="ejercicio1bucle()">1. Mostrar los Números del 1 al 10 en la Consola ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio2bucle()">2. Tabla de multiplicar de un numero ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio3bucle()">3. Contar Números Pares del 1 al 20 ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio4bucle()">4. Pedir Nombres Hasta que el Usuario Escriba "salir" ✔</button>
+            <div class="linea-separadora"></div>
+            
+            <button onclick="ejercicio5bucle()">5. Contador de Vocales en una Palabra ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio6bucle()">6. Sumar los Números de un Array ✔</button>
+            <div class="linea-separadora"></div>
+            
+            <button onclick="ejercicio7bucle()">7. Números Primos Hasta un Número Dado ✔</button>
+            <div class="linea-separadora"></div>
+            
+            <button onclick="ejercicio8bucle()">8. Invertir un Texto ✔</button>
+            <div class="linea-separadora"></div>
+            
+            <button onclick="ejercicio9bucle()">9. Contar Palabras en una Frase ✔</button>
+            <div class="linea-separadora"></div>
+            
+            <button onclick="ejercicio10bucle()">10. Generar un Número Secreto y Adivinarlo ✔</button>
+            <div class="linea-separadora"></div>
+        </div>
+    </div>
+
+    <!-- BOTONES SEMANA 1 -->
+    <div class="contenedor">
+        <div class="texto">
+            <h1>Semana 1</h1>
+
+            <button onclick="ejercicio1semana1()">1. Contraseña válida ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio2semana1()">2. Calcular impuestos ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio3semana1()">3. IMC (Índice de masa corporal) ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio4semana1()">4. Imprimir un arreglo ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio5semana1()">5. Número de Likes ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio6semana1()">6. FizzBuzz ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio7semana1()">7. Contar rango de números ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio8semana1()">8. Sumar rango de números ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio9semana1()">9. Número de aes ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio10semana1()">10. Número de caracteres ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio11semana1()">11. Sumar arreglo</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio12semana1()">12. Multiplicar arreglo</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio13semana1()">13. Remover ceros ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio14semana1()">14. Sumar arreglo entre el rango ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio15semana1()">15. Transcribir ADN a ARN ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio16semana1()">16. Capitalizar palabra ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio17semana1()">17. Capitalizar cada palabra ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio18semana1()">18. Encontrar el número máximo ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio19semana1()">19. Encontrar el número mínimo ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio20semana1()">20. Generar contraseña ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio21semana1()">21. Encontrar números pares en un arreglo ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio22semana1()">22. Encontrar posiciones de números pares ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio23semana1()">23. Duplicar elementos de un arreglo ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio24semana1()">24. Encontrar palabras que empiecen por "a" ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio25semana1()">25. Encontrar palabras que terminan en "s" ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio26semana1()">26. Imprimir una matriz ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio27semana1()">27. Traducir números a palabras ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio28semana1()">28. Traducir palabras a números ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio29semana1()">29. Número de asteriscos en un arreglo ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio30semana1()">30. Número de asteriscos en una matriz ✔</button>
+            <div class="linea-separadora"></div>
+
+            <button onclick="ejercicio31semana1()">31. Distancia entre dos strings ✔</button>
+            <div class="linea-separadora"></div>
+        </div>
+    </div>
+    
+    <!-- SCRIPT INICIALES -->
+    <script src="./recursos/javascript/iniciales/ejercicio1.js"></script>
+    <script src="./recursos/javascript/iniciales/ejercicio2.js"></script>
+    <script src="./recursos/javascript/iniciales/ejercicio3.js"></script>
+
+    <!-- BOTONES BUCLES -->
+    <script src="./recursos/javascript/bucle/ejercicio1bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio2bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio3bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio4bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio5bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio6bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio7bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio8bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio9bucle.js"></script>
+    <script src="./recursos/javascript/bucle/ejercicio10bucle.js"></script>
+
+    <!-- SEMANA 1 -->
+    <script src="./recursos/javascript/semana1/ejercicio1semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio2semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio3semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio4semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio5semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio6semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio7semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio8semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio9semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio10semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio11semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio12semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio13semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio14semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio15semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio16semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio17semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio18semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio19semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio21semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio22semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio23semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio24semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio26semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio27semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio28semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio29semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio30semana1.js"></script>
+    <script src="./recursos/javascript/semana1/ejercicio31semana1.js"></script>
+
+</body>
+</html>

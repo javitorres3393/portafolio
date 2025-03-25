@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 4</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <style>
+        body {
+          font-family: sans-serif;
+          margin: 0;
+        }
+        
+        .container {
+          display: flex;
+          background-color: rgba(123, 198, 199, 0.8);
+        }
+        
+        .block {
+          flex: 1; /* Permite que los bloques se expandan para ocupar el espacio disponible */
+          color: black;
+          padding: 20px;
+          box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+        }
+        
+        .block:not(:last-child) {
+          border-right: 1px solid #ddd; /* Añade una línea divisoria entre bloques */
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+          <div class="block">
+            Solo tengo una línea
+          </div>
+          <div class="block">
+            Este texto ocupa algo más que el de al lado<br>Son dos líneas
+          </div>
+          <div class="block">
+            Este texto es mas largo que los otros dos y ocupa más lineas<br>Pero estos bloques tienen la misma altura y anchura, crecen o se contraen para repartirse el ancho disponible
+          </div>
+          </div>
+          <br><br><a href="../../html.html"><button>Volver</button></a>
+          </body>
+</html>

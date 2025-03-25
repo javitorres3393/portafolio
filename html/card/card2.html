@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <title>Card 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .card {
+            width: 400px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            background: white;
+            padding: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-content {
+            flex: 1;
+            padding-right: 15px;
+        }
+        .card-content h2 {
+            font-size: 18px;
+            color: #000000;
+        }
+        .card-content p {
+            font-size: 14px;
+            color: #686565;
+        }
+        .card-highlight {
+            width: 40px;
+            background: #5dfe00;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin-right: 20px;
+        }
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .card-icon img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <h2>Título</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum augue eu sapien facilisis bibendum. Praesent blandit velit et diam cursus cursus. Fusce eget tortor eget sem pulvinar malesuada id eget sapien..</p>
+        </div>
+        <div class="card-highlight"></div>
+        <div class="card-icon">
+            <img src="./imagen2.svg" alt="icono">
+        </div>
+    </div>
+</body>
+</html>
+
+
+<br><br><a href="../../html.html"><button>Volver</button></a>

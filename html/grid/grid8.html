@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 2fr 2fr;
+          grid-template-rows: 50px 100px 100px; /* Ajusta las alturas según sea necesario */
+          grid-gap: 1px;
+        }
+        
+        .celda {
+          background-color: #778899; /* Gris oscuro */
+          text-align: center;
+          padding: 10px;
+          color: white;
+        }
+        
+        .celda-ancha {
+          background-color: #A0522D; /* Marrón */
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+          <div class="celda celda-ancha" style="grid-column: 2 / 4; grid-row: 1 / 2;">celda 1</div>
+          <div class="celda" style="grid-column: 1 / 2; grid-row: 2 / 4;">celda 2</div>
+          <div class="celda" style="grid-column: 2 / 3; grid-row: 2 / 3;">celda 3</div>
+          <div class="celda" style="grid-column: 3 / 4; grid-row: 2 / 4;">celda 4</div>
+          <div class="celda" style="grid-column: 2 / 4; grid-row: 3 / 4;">celda 5</div>
+        </div>
+        
+        </body>
+</html>

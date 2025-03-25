@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222; /* Fondo oscuro */
+    color: #f4f4f4; /* Color de texto claro */
+}
+
+.contenedor {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #333; /* Fondo gris oscuro para el recuadro */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del input */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón */
+button:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+.boton-volver {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-volver:hover {
+    background-color: #f39c12;
+    color: white;
+}

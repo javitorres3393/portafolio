@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 5</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+</head>
+<body>
+    <body>
+        <div class="form-container">
+            <form action="procesar_contacto.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="mensaje">Escriba su mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" cols="40" rows="10" required></textarea><br>
+                
+                <input type="hidden" name="origen" value="página de contacto">
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+    </body>
+</body>
+</html>

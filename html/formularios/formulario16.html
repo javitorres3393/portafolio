@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 16</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+
+</head>
+<body>
+
+    <h1>Elige el color que estoy pensando</h1>
+    
+    <form method="get" action="colores.php" id="colorForm">
+        <label for="color">Colores:</label>
+        <select id="color" name="color">
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+        <option value="rojo">Rojo</option>
+        <option value="naranja">Naranja</option>
+        <option value="rosa">Rosa</option>
+        <option value="marron">Marrón</option>
+        </select>
+        <br>
+    
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <script>
+        const form = document.getElementById('colorForm');
+        const colorSelect = document.getElementById('color');
+    
+        form.addEventListener('submit', function(event) {
+        const colorElegido = colorSelect.value;
+        const colorCorrecto = Math.floor(Math.random() * 6); // Genera un número aleatorio entre 0 y 5
+    
+        const colores = ["azul", "verde", "rojo", "naranja", "rosa", "marron"];
+        const colorCorrectoString = colores[colorCorrecto];
+    
+    
+        if (colorElegido !== colorCorrectoString) {
+            event.preventDefault(); // Evita que se envíe el formulario si el color es incorrecto
+            alert("¡Incorrecto! Intenta de nuevo.");
+        }
+    });
+    </script>
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+
+    </body>
+</html>

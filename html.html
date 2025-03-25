@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./recursos/css/comun.css">
+    <link rel="stylesheet" type="text/css" href="./recursos/css/javascript.css">
+    <title>Javascript</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="./recursos/imagenes/logo.png">
+    <style>
+        .menu {
+            display: none;
+        }
+        .texto h1 {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let titulos = document.querySelectorAll(".texto h1");
+            titulos.forEach(titulo => {
+                titulo.addEventListener("click", function() {
+                    let menu = this.nextElementSibling;
+                    if (menu && menu.classList.contains("menu")) {
+                        menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="./main.html">
+            <img src="./recursos/imagenes/logo.png" alt="Logo de Javier Torres Jiménez" class="logo">
+        </a>
+        <nav>
+            <a href="./main.html">Inicio</a>
+            <a href="./javascript.html">Javascript</a>
+            <a href="./html.html">HTML</a>
+            <a href="./sobremi.html">Sobre mi</a>
+            <a href="./proyectos.html">Proyectos</a>
+        </nav>
+    </header>
+    
+    <!-- Secciones -->
+    <div class="contenedor">
+        <div class="texto">
+            <h1>Tablas</h1>
+            <div class="menu">
+            <a href="./html/tablas/ejercicio1.html"><button>1. Tabla simple</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/tablas/ejercicio2.html"><button>2. Uniendo celdas</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/tablas/ejercicio3.html"><button>3. Más celdas combinadas</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/tablas/ejercicio4.html"><button>4. Horario</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./tablas/ejercicio5.html"><button>5. Tabla con titular y pie</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/tablas/ejercicio6.html"><button>6. Tabla compleja</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/tablas/ejercicio7.html"><button>7. Un catálogo con tablas.</button></a>
+            <div class="linea-separadora"></div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="contenedor">
+        <div class="texto">
+            <h1>Formularios</h1>
+            <div class="menu">
+                <a href="./html/formularios/formulario1.html"><button>1. Formulario para un login</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario2.html"><button>2. Listas de opciones</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario3.html"><button>3. Opciones excluyentes</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario4.html"><button>4. Opciones varias</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario5.html"><button>5. Contactar al Aptdo.</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario6.html"><button>6. Fechas</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario7.html"><button>7. Datos ocultos</button></a>
+            <div class="linea-separadora"></div>
+            
+            <a href="./html/formularios/formulario8.html"><button>8. Plantillas para valores</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario9.html"><button>9. Comprando por lotes</button></a>
+            <div class="linea-separadora"></div>
+            
+            <a href="./html/formularios/formulario10.html"><button>10. Registro de programador</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario11.html"><button>11. Formulario de registro</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario12.html"><button>12. Formulario de contacto</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario13.html"><button>13. Formulario de reservas</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario14.html"><button>14. Crear cuenta</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario15.html"><button>15. Enviar imagen de receta</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario16.html"><button>16. Adivina el color</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario17.html"><button>17. Mensajería</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario18.html"><button>18. Calcular IVA</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario19.html"><button>19. Formulario de checkout</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/formularios/formulario20.html"><button>20. Búsqueda avanzada</button></a>
+            <div class="linea-separadora"></div>
+            </div>
+        </div>
+    </div>
+
+        <!-- FLEXS -->
+    <div class="contenedor">
+        <div class="texto">
+            <h1>Flexs</h1>
+            <div class="menu">
+            <a href="./html/flex/flex2.html"><button>2. Menu horizontal con flex</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex3.html"><button>3. Una menú vertical con flex</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex4.html"><button>4. Bloques paralelos.</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex5.html"><button>5. Centrado total de un título</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex6.html"><button>6. Un sidebar a la izquierda del contenido</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex7.html"><button>7. Un sidebar con menu</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex8.html"><button>8. Card con flexbox</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex9.html"><button>9. Grupo de tarjetas (set card)</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex10.html"><button>10. Layout de dos columnas con filas</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/flex/flex11.html"><button>11. A toda página</button></a>
+            <div class="linea-separadora"></div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- GRIDS -->
+    <div class="contenedor">
+        <div class="texto">
+            <h1>Grids</h1>
+            <div class="menu">
+            <a href="./html/grid/grid2.html"><button>2. Tabla con grid</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid3.html"><button>3. Tabla con cabecera</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid4.html"><button>4. Celdas combinadas.</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid5.html"><button>5. Usando las áreas</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid6.html"><button>6. Otro sidebar</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid7.html"><button>7. Celdas interiores combinadas</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid8.html"><button>8. Celdas del grid vacías</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid9.html"><button>9. Controlando el orden</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid10.html"><button>10. Reparto por columnas</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/grid/grid11.html"><button>11. Grids anidados</button></a>
+            <div class="linea-separadora"></div>
+        </div>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="contenedor">
+        <div class="texto">
+            <h1>Cards</h1>
+            <div class="menu">
+            <a href="./html/card/card1.html"><button>1. La card más básica</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card2.html"><button>2. Crear un ficha con cinta lateral.</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card3.html"><button>3. Una card para lo social</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card4.html"><button>4. Ficha de producto 3D</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card5.html"><button>5. Card como tarjeta identificativa</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card6.html"><button>6. Una tarjeta horizontal</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card7.html"><button>7. Una card horizontal con lado inclinado</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card8.html"><button>8. Card para anuncio</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card9.html"><button>9. Card con formulario</button></a>
+            <div class="linea-separadora"></div>
+
+            <a href="./html/card/card10.html"><button>10. Una card no rectangular</button></a>
+            <div class="linea-separadora"></div>
+            
+            <a href="./html/card/card11.html"><button>11. Cartas creada con GRID</button></a>
+            <div class="linea-separadora"></div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 10</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr); 
+            grid-gap: 1px;
+        }
+        
+        .celda {
+            background-color: #778899;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="container">
+            <div class="celda">celda 1</div>
+            <div class="celda">celda 2</div>
+            <div class="celda">celda 3</div>
+            <div class="celda">celda 4</div>
+            <div class="celda">celda 5</div>
+            <div class="celda">celda 6</div>
+        </div>
+        
+        </body>
+</html>

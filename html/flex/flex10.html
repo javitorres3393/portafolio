@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 10</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+    <style>
+        body {
+          display: grid;
+          grid-template-columns: 1fr 2fr; /* Columna izquierda (1 parte) y derecha (2 partes) */
+          grid-template-rows: 1fr 1fr; /* Dos filas de igual altura */
+          height: 100vh; /* Ocupa toda la altura de la ventana */
+          margin: 0; /* Elimina márgenes por defecto */
+        }
+        
+        .columna-izquierda {
+          background-color: teal;
+          padding: 20px;
+          display: flex;
+          justify-content: center; /* Centra el texto verticalmente */
+          align-items: center; /* Centra el texto horizontalmente */
+        }
+        
+        .columna-derecha-arriba {
+          background-color: white;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .columna-derecha-abajo {
+          background-color: white;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="columna-izquierda">Columna izquierda</div>
+        <div class="columna-derecha-arriba">Derecha parte alta</div>
+        <div class="columna-derecha-abajo">Derecha parte baja</div>
+        
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+
+        </body>
+</html>

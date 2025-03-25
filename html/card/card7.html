@@ -1,0 +1,99 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>Card 7</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+
+    <style>
+    *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+    }
+    .card h2{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: .5rem;
+        margin-top: 0;
+    }
+    .card{
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 3px #c9c2c2;
+        display: flex;
+        overflow: hidden;
+        width: 800px;
+    }
+    .card .ladoIzq{
+        color: white;
+        padding: 48px;
+        position: relative;
+        width: 65%;
+    }
+    .card .ladoIzq::after{
+        background: #ff7043d1;
+        border-radius: 24px;
+        box-shadow: 3px -2px 13px 0px #525252;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: skew(160deg,0);
+        transform-origin: top left;
+        width: 100%;
+        z-index: -1;
+    }
+    .card .ladoDer{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 12px;
+        width: 35%;
+    }
+    .card .cuerpo{
+        line-height: 150%;
+        text-align: center;
+    }
+    .card .centrahrz{
+        text-align: center;
+    }
+    .card .btn{
+        background: white;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 18px;
+        padding: 14px;
+    }
+    .card a.btn{
+        text-decoration: none;
+    }
+    .card a.btn:first-of-type{
+        background: #a02128;
+        color: white;
+    }
+    .card a.btn:hover{
+        opacity: 0.8;
+    }
+    </style>
+    </head>
+    
+    <body>
+    <div class="card">
+        <div class="ladoIzq"> <img src="https://corporate.sixt.com/en-gb/wp-content/uploads/sites/5/2019/09/sixt.com-bmw-2series-gran-tourer.png" alt="muestra" width="90%"></div>
+        <div class="ladoDer">
+          <h2 class="titulo">Urban Car</h2>
+          <div class="cuerpo">
+            <p>El vehículo familiar con el que encontrar la felicidad absoluta recorriendo carreteras y para disfrutar de la conducción</p><p>¿A qué esperas? ¡Cómpralo ya!</p>
+          </div>  
+          <div class="centrahrz"> <a class="btn" href="#">Más info</a></div>
+      </div>
+    </div>
+    
+    
+    </body></html>

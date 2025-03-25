@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 18</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+
+</head>
+<body>
+
+    <h1>Precio con IVA</h1>
+    
+    <form id="ivaForm">
+        <label for="precio">Total:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+        <br>
+        
+        <label>IVA:</label>
+        <input type="radio" id="normal" name="iva" value="0.21" checked>
+        <label for="normal">Normal (21%)</label>
+        <input type="radio" id="reducido" name="iva" value="0.10">
+        <label for="reducido">Reducido (10%)</label>
+        <br>
+        
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" readonly>
+        <br>
+        
+        <button type="button" onclick="calcularIVA()">Calcular</button>
+    </form>
+    
+    <script>
+    function calcularIVA() {
+        const precio = parseFloat(document.getElementById("precio").value);
+        const tipoIVA = parseFloat(document.querySelector('input[name="iva"]:checked').value);
+        const resultado = precio * (1 + tipoIVA);
+        document.getElementById("resultado").value = resultado.toFixed(2);
+    }
+    </script>
+        <br><br><a href="../../html.html"><button>Volver</button></a>
+
+    </body>
+</html>

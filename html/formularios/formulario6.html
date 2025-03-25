@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 6</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../../recursos/imagenes/logo.png">
+</head>
+<body>
+    <div class="form-container">
+        <form action="procesar_reserva.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" required><br>
+            
+            <label for="fecha_inicio">Fecha de inicio:</label>
+            <input type="date" id="fecha_inicio" name="fecha_inicio" required><br>
+            
+            <label for="fecha_fin">Fecha de salida:</label>
+            <input type="date" id="fecha_fin" name="fecha_fin" required><br>
+            
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+            
+    <br><br><a href="../../html.html"><button>Volver</button></a>
+</body>
+</html>
